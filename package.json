@@ -1,0 +1,12 @@
+{
+  "name": "fiftybot",
+  "version": "0.1.0",
+  "dependencies": {
+    "nedb": "^1.0.0",
+    "okrabyte": "^0.1.1",
+    "path": "^0.4.9",
+    "readline": "0.0.5",
+    "twitch-irc": "^1.2.7",
+    "underscore": "^1.7.0"
+  }
+}
