@@ -1,3 +1,5 @@
+var MersenneTwister = require('mersennetwister');
+
 var Commons = [
     {
         type: 'TEXT',
@@ -25,7 +27,17 @@ var Commons = [
 		type: 'TEXT',
 		command: 'elo',
 		text: 'http://euw.op.gg/summoner/userName=the+brave+57'
-	}
+	},
+    {
+        type: 'FUNC',
+        command: 'infa',
+        alias: ['инфа'],
+        f: function(from, text, cb) {
+            var mt = new MersenneTwister(Date.now());
+            var chance = Math.round(mt.real()*100);
+            cb('Инфа ' + text + ' ' + chance + '%');
+        }
+    }
 ];
 
 module.exports = Commons;

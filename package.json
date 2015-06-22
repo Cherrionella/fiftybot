@@ -7,6 +7,7 @@
     "path": "^0.4.9",
     "readline": "0.0.5",
     "twitch-irc": "^1.2.7",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "mersennetwister": "~0.2.1"
   }
 }
